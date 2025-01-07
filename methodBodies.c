@@ -36,7 +36,7 @@ void displaySet(GenSet_t *set) {//function displaying all elements of a given se
        }
    }
 }
-GenSet_t* unionSet(GenSet_t *set1, GenSet_t *set2) {//fuction making a new set - a union of two given sets
+GenSet_t* unionSet(GenSet_t *set1, GenSet_t *set2) {//function making a new set - a union of two given sets
    if(set1->type != set2->type) {//checking if the data types of the sets align
        printf("operation impossible, different data types\n");
        return 0;
@@ -60,7 +60,7 @@ GenSet_t* unionSet(GenSet_t *set1, GenSet_t *set2) {//fuction making a new set -
    }
    return unionn;//returning a newly created union of two sets
 }
-GenSet_t* intersectSet(GenSet_t *set1, GenSet_t *set2) {//fuction making a new set - an intersection of two given sets
+GenSet_t* intersectSet(GenSet_t *set1, GenSet_t *set2) {//function making a new set - an intersection of two given sets
    if(set1->type != set2->type) {//checking if the data types of the sets align
        printf("operation impossible, different data types\n");
        return 0;
@@ -76,7 +76,7 @@ GenSet_t* intersectSet(GenSet_t *set1, GenSet_t *set2) {//fuction making a new s
    }
    return intersection;//returning a newly created intersection of two sets
 }
-GenSet_t* diffSet(GenSet_t *set1, GenSet_t *set2) {//fuction making a new set - a difference of two given sets
+GenSet_t* diffSet(GenSet_t *set1, GenSet_t *set2) {//function making a new set - a difference of two given sets
    if(set1->type != set2->type) {//checking if the data types of the sets align
        printf("operation impossible, different data types\n");
        return 0;
